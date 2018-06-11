@@ -1,8 +1,8 @@
 # Introduction
 
-Help is an inline help tool for MorphOS Shell.
+Help is an inline help tool for [MorphOS](http://www.morphos-team.net) Shell.
 
-It's like *man* for MorphOS.
+It's like *man* for [MorphOS](http://www.morphos-team.net).
 
 # Features
 
@@ -49,7 +49,17 @@ MorphOS:> Help why
 ```
 MorphOS:> Help shell
 => displays a list of the commands found in the 'Shell' domain.
+```
+
+# Building from sources
+
+To build Help for MorphOS, you only need the MorphOS SDK, no other components are needed. Once configured, building Help is as simple as typing:
+
 ````
+make
+````
+
+By default, make will invoke `ppc-morphos-gcc`: this can be configured in the makefile if needed.
 
 # Background
 
@@ -76,7 +86,7 @@ Only some undocumented arguments are missing.
 
 # Licence
 
-Help v0.93
+Help
 Copyright © 2004-2005 by Nicolas Ramz
 Help is distributed under the MIT licence.
 
