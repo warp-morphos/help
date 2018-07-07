@@ -87,7 +87,7 @@ int NB_COMMANDS=0, NB_COMMANDS_FULL=0, NB_DOM=0;
 #define RC_WARN 5
 
 #define _VERSION_ "[MOS] 0.93 (05.03.2005)"
-char DVER[]="$VER: Help "_VERSION_"Â© 2004-2005 by Nicolas Ramz";
+char DVER[]="$VER: Help "_VERSION_"© 2004-2005 by Nicolas Ramz";
 
 typedef struct domains_desc
 {
@@ -1289,7 +1289,8 @@ void Usage(void)
     printf("Help CMD=DIR %s\n", msgUsageEX1);
     printf("Help DOM=AUDIO %s\n", msgUsageEX2);
     printf("\nHelp %s\n", _VERSION_);
-    printf("Copyright Â© 2004-2005 Nicolas Ramz\n");
+    printf("Copyright © 2004-2005 Nicolas Ramz\n");
+    printf("Open-Source MIT-license release\n");
     printf("%s\n", msgUsageLANG);
 }
 
@@ -1485,8 +1486,8 @@ int main(int argc, char *argv[])
                     break;
 
                     case USAGE_DOM:
-                        //**printf("Dom '%s' detectÃ©\n", args[USAGE_DOM]);
-                        //**printf("Option pas encore codÃ©e :)\n");
+                        //**printf("Dom '%s' detecté\n", args[USAGE_DOM]);
+                        //**printf("Option pas encore codée :)\n");
                         trouve = find_dom((char*)args[USAGE_DOM]);
                         if (trouve >-1)
                         {
@@ -1503,14 +1504,14 @@ int main(int argc, char *argv[])
                     break;
 
                     case USAGE_ARGS:
-                        //**printf("Args detectÃ©\n", args[USAGE_ARGS]);
-                        //**printf("Option pas encore codÃ©e :)\n");
+                        //**printf("Args detecté\n", args[USAGE_ARGS]);
+                        //**printf("Option pas encore codée :)\n");
                         DisplayARGS();
                         //DisplayALL(&commands_list);
                     break;
 
                     case USAGE_CMD:
-                        //**printf("Cmd '%s' detectÃ©\n", args[USAGE_CMD]);
+                        //**printf("Cmd '%s' detecté\n", args[USAGE_CMD]);
                         trouve = find_cmd((char*)args[USAGE_CMD]);
                         if (trouve>-1)
                         {
@@ -1533,7 +1534,7 @@ int main(int argc, char *argv[])
                             return_code = RC_WARN;
                         }
                         //**printf("trouve = '%d'\n", trouve);
-                        //printf("Option pas encore codÃ©e :)\n");
+                        //printf("Option pas encore codée :)\n");
                         //DisplayALL(&commands_list);
                     break;
 

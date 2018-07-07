@@ -30,13 +30,46 @@ Help understands the following arguments:
 Show the full description of the dir command:
 
 ```
-Help CMD=DIR
-```
+Ram Disk:> help CMD=DIR
 
+DIR          - Lists files and directory names (w/o attributes)
+
+DIR, OPT/K, ALL/S, DIRS/S, FILES/S, INTER/S
+
+DIR    - directory to list
+OPT    - provided for compatibility: depreciated!
+AL     - displays all subdirectories and their files.
+DIRS   - only displays directories
+FILES  - only displays files
+INTER  - enters an interactive listing mode (see below).
+
+Interactive listing mode stops after each name to display a question mark
+at which you can enter commands. The acceptable responses are show below:
+
+[Return] - Displays the next name on the list.
+[E]      - Enters a directory; the files in that directory are displayed.
+[B]      - Goes back one directory level.
+[DEL]    - Deletes a file or empty directory.
+           DEL does not refers to the Del key; enter the letter D, E and L.
+[T]      - Types the contents of a file
+[C]      - Allows you to enter additional AmigaDOS commands.
+[COMMAND]- Idem
+[Q]      - Quits interactive editing.
+[?]      - Displays a list of the available interactive-mode commands.
+```
 List every sound-related command:
 
 ```
-Help DOM=AUDIO
+Help DOM=USB
+
+Commands found in the domain 'USB':
+
+AddUSBClasses - Add or remove Classes from the USB stack
+AddUSBHardware- Manually add or remove hardware to/from MorphOS
+DRadioTool    - Controls an USB Radio manufactured by D-Link or GemTek
+PenCamTool    - Read out images from an USB webcam using the STV680 chipset
+USBDevLister  - Lists all found USB devices
+USBErrorLog   - Shows all USB-Related messages since the start of the stack
 ```
 
 > **NOTE:** If a string is given without the CMD nor DOM arguments, Help will first look for the command list and then the domain
@@ -60,6 +93,18 @@ make
 ````
 
 By default, make will invoke `ppc-morphos-gcc`: this can be configured in the makefile if needed.
+
+# Notes about files encoding
+
+MorphOS (just like AmigaOS) only supports 8bit text-encoding throughout the OS so every text file must be encoded using an ISO code page.
+
+Each catalog `.ct` file must be encoded using the correct ISO variant: check the keyboard preferences to see
+which one to use as that's what MorphOS uses as the encoding to display text files.
+
+For example, the `français.ct` file is encoded using `ISO8859-1`.
+
+UTF-8 could have been used but it meant every a string was to be printed in the shell it had to be encoded
+from UTF-8 to the local ANSI ISO page.
 
 # Background
 

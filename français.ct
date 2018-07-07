@@ -1,23 +1,23 @@
-## version $VER: Fran√ßais.ct 0.6 (23.01.05)
-## language fran√ßais
+## version $VER: FranÁais.ct 0.6 (23.01.05)
+## language franÁais
 ## codeset 0
 ;
 ; Catalog Description file for Help.catalog
 ;
 msgAddAudioModes
-G√®re la liste des modes audio AHI
+GËre la liste des modes audio AHI
 ; Builds and removes audio modes that AHI can understand
 msgAddAudioModesFULL
-FILES   - Sp√©cifie le(s) descripteur(s) √† rajouter √† la liste des modes.\n\
-QUIET   - Si sp√©cifi√©, supprime les messages de sortie/erreurs.\n\
-REFRESH - Scanne `DEVS:Audiomodes' et rajoute tous les descripteurs trouv√©s\n\
-          √† la liste des modes.\n\
-REMOVE  - Vide la liste des modes audio courants de la m√©moire.\n\
-DBLSCAN - Ouvre et ferme imm√©diatement un √©cran double-scan natif.\n\
-          Sur certains syst√®mes avec carte graphique, cela\n\
-          activera les fr√©quences >28 kHz avec le mode audio natif.\n\
-          Vous devez poss√©der le pilote moniteur correspondant dans le\n\
-          r√©pertoire `DEVS:Monitors' pour que cela fonctionne.\n
+FILES   - SpÈcifie le(s) descripteur(s) ‡ rajouter ‡ la liste des modes.\n\
+QUIET   - Si spÈcifiÈ, supprime les messages de sortie/erreurs.\n\
+REFRESH - Scanne `DEVS:Audiomodes' et rajoute tous les descripteurs trouvÈs\n\
+          ‡ la liste des modes.\n\
+REMOVE  - Vide la liste des modes audio courants de la mÈmoire.\n\
+DBLSCAN - Ouvre et ferme immÈdiatement un Ècran double-scan natif.\n\
+          Sur certains systËmes avec carte graphique, cela\n\
+          activera les frÈquences >28 kHz avec le mode audio natif.\n\
+          Vous devez possÈder le pilote moniteur correspondant dans le\n\
+          rÈpertoire `DEVS:Monitors' pour que cela fonctionne.\n
 ; FILES   - Specifies which descriptor(s) to be added to the current mode list.\n\
 ; QUIET   - If specified, will suppress error and output messages\n\
 ; REFRESH - Scan `DEVS:Audiomodes' and add all descriptors found there to\n\
@@ -29,13 +29,13 @@ DBLSCAN - Ouvre et ferme imm√©diatement un √©cran double-scan natif.\n\
 ;           You need an appropriate monitor driver in `DEVS:Monitors'\n\
 ;           to make it work.\n
 msgAddBuffers
-D√©finit le nombre de tampons √† allouer pour un lecteur
+DÈfinit le nombre de tampons ‡ allouer pour un lecteur
 ; Defines how many buffers are allocated for a drive
 msgAddBuffersFULL
 DRIVE   - Lecteur pour lequel modifier le nombre de tampons\n\
-BUFFERS - Nombre de tampons √† ajouter ou retirer\n\n\
+BUFFERS - Nombre de tampons ‡ ajouter ou retirer\n\n\
 Si seul l'argument DRIVE est fournit, AddBuffers affichera\n\
-le nombre de tampons allou√©s pour ce lecteur.\n\n\
+le nombre de tampons allouÈs pour ce lecteur.\n\n\
 Exemple: AddBuffers dh0: -100\n\n\
 => Retire 100 tampons au lecteur DH0:\n
 ; DRIVE   - Drive for which to change allocated buffers\n\
@@ -48,15 +48,15 @@ msgAddDataTypes
 Active les datatypes ou ajoute un nouveau datatype
 ; Activates datatypes or adds another datatype
 msgAddDataTypesFULL
-FILES   - noms des descripteurs de type de donn√©es √† ajouter √† la liste.\n\
+FILES   - noms des descripteurs de type de donnÈes ‡ ajouter ‡ la liste.\n\
 QUIET   - supprime les messages d'erreur/sortie.\n\
-REFRESH - scanne le r√©pertoire DEVS:DataTypes √† la recherche de nouveaux\n\
-          descripteurs ou de descripteurs ayant √©t√© modifi√©s.\n\n\
-Les descripteurs de types de donn√©es sont stock√©s dans DEVS:DataTypes.\n\
-Ces descripteurs permettent aux programme comme MultiView d'interpr√©ter\n\
-differents fichiers de donn√©es. AddDataTypes peut aussi √™tre utilis√© par\n\
+REFRESH - scanne le rÈpertoire DEVS:DataTypes ‡ la recherche de nouveaux\n\
+          descripteurs ou de descripteurs ayant ÈtÈ modifiÈs.\n\n\
+Les descripteurs de types de donnÈes sont stockÈs dans DEVS:DataTypes.\n\
+Ces descripteurs permettent aux programme comme MultiView d'interprÈter\n\
+differents fichiers de donnÈes. AddDataTypes peut aussi Ítre utilisÈ par\n\
 des scripts d'installation d'applications pour ajouter leur propres\n\
-types de donn√©es √† la liste.\n
+types de donnÈes ‡ la liste.\n
 ; FILES   - names of the data type descriptors to add to the existing list.\n\
 ; QUIET   - suppresses error and output messages.\n\
 ; REFRESH - scans the DEVS:DataTypes dir for new or changed\n\
@@ -69,27 +69,27 @@ msgAddUSBClasses
 Ajoute ou retire des classes de la pile USB
 ; Add or remove Classes from the USB stack
 msgAddUSBClassesFULL
-QUIET  - si sp√©cifi√©, aucun message ne sera affich√© dans le shell.\n\
+QUIET  - si spÈcifiÈ, aucun message ne sera affichÈ dans le shell.\n\
 REMOVE - retire toutes les classes au lieu de les rajouter.\n
 ; QUIET  - if used, no messages are printed into the shell.\n\
 ; REMOVE - remove all classes instead of adding them.\n
 msgAddUSBHardWare
-Ajoute ou enl√®ve manu. un p√©riph√©. USB de/√† partir de MorphOS
+Ajoute ou enlËve manu. un pÈriphÈ. USB de/‡ partir de MorphOS
 ; Manually add or remove USB hardware to/from MorphOS
 msgAddUSBHardWareFULL
-DEVICE - param√®tre requis contenant le chemin (absolu) vers le pilote \n\
-         du p√©riph√©rique USB √† rajouter ou retirer.\n\
-UNIT   - optionel: num√©ro de l'unit√© du pilote (si support√©).\n\
-         l'unit√© par d√©faut est 0.\n\
-QUIET  - si sp√©cifi√©, aucun message ne sera affich√© dans le shell.\n\
-REMOVE - si elle est trouv√©e, essaie de retirer l'unit√© au lieu\n\
-         de l'ajouter. Soyez s√ªr d'utiliser le m√™me chemin/nom de fichier\n\
-         que celui utilis√© lors de l'ajout du p√©riph√©rique.\n\
-ALL    - essaie d'ajouter toutes les unit√©s du p√©riph√©rique s√©lectionn√©.\n\
-         si REMOVE est sp√©cifi√©, retire toutes les unit√©s, ayant pour effet\n\
-         de d√©sactiver la pile.\n\n\
-Note: apr√®s avoir ajout√© un nouveau pilote de p√©riph√©rique, une relecture\n\
-      des classes est automatiquement effectu√©e.\n
+DEVICE - paramËtre requis contenant le chemin (absolu) vers le pilote \n\
+         du pÈriphÈrique USB ‡ rajouter ou retirer.\n\
+UNIT   - optionel: numÈro de l'unitÈ du pilote (si supportÈ).\n\
+         l'unitÈ par dÈfaut est 0.\n\
+QUIET  - si spÈcifiÈ, aucun message ne sera affichÈ dans le shell.\n\
+REMOVE - si elle est trouvÈe, essaie de retirer l'unitÈ au lieu\n\
+         de l'ajouter. Soyez s˚r d'utiliser le mÍme chemin/nom de fichier\n\
+         que celui utilisÈ lors de l'ajout du pÈriphÈrique.\n\
+ALL    - essaie d'ajouter toutes les unitÈs du pÈriphÈrique sÈlectionnÈ.\n\
+         si REMOVE est spÈcifiÈ, retire toutes les unitÈs, ayant pour effet\n\
+         de dÈsactiver la pile.\n\n\
+Note: aprËs avoir ajoutÈ un nouveau pilote de pÈriphÈrique, une relecture\n\
+      des classes est automatiquement effectuÈe.\n
 ; DEVICE - required argument containing the (absolute) path and name of\n\
 ;          the USB hardware device driver to add or remove.\n\
 ; UNIT   - optional unit number, if multiple units are supported.\n\
@@ -103,14 +103,14 @@ Note: apr√®s avoir ajout√© un nouveau pilote de p√©riph√©rique, une relecture\n\
 ;          stack offline.\n\n\
 ; Note: After adding the hardware driver, a class scan is done automatically.\n
 msgAlias
-Cr√©e ou affiche des alias de commandes.
+CrÈe ou affiche des alias de commandes.
 ; Sets or displays command aliases.
 msgAliasFULL
 NAME   - nom de l'Alias.\n\
-STRING - cha√Æne √† substituer lorsque l'alias est rencontr√©\n\n\
-Alias cr√©e des alias, ou noms alternatifs, pour les commandes MorphOS.\n\
-Alias peut √™tre utilis√© pour abr√©ger des commandes d'usage fr√©quent\n\
-ou remplacer des noms de commandes standards par des noms diff√©rents.\n\n\
+STRING - chaÓne ‡ substituer lorsque l'alias est rencontrÈ\n\n\
+Alias crÈe des alias, ou noms alternatifs, pour les commandes MorphOS.\n\
+Alias peut Ítre utilisÈ pour abrÈger des commandes d'usage frÈquent\n\
+ou remplacer des noms de commandes standards par des noms diffÈrents.\n\n\
 Exemple:\n\n\
 SYS:> Alias salut echo \"Bonjour !\"\n\
 SYS:> salut\n\
@@ -137,25 +137,25 @@ SYS:>\n
 ;   disk.info                         5792 ----rwed Today 21:32:44\n\
 ;   2 files - 3 directories - 6542 bytes used\n
 msgAsk
-Affiche une question √† l'ex√©cution d'un script
+Affiche une question ‡ l'exÈcution d'un script
 ; Displays a question at the execution of a script
 msgAskFULL
-PROMPT - Texte (question) √† afficher.\n\n\
-Ask affiche √† l'√©cran une question et exige une r√©ponse de l'utilisateur.\n\
-Cette r√©ponse peut √™tre 'Y' (Oui), 'N' (Non) ou rien, auquel cas\n\
-Ask consid√©rera la r√©ponse comme n√©gative. Pour indiquer aux commandes\n\
-la r√©ponse obtenue, Ask modifiera le drapeau de condition (cf. command IF).\n\
-Si la r√©ponse est affirmative, il est pos√© √† 5 (WARN), 0 sinon.\n\n\
+PROMPT - Texte (question) ‡ afficher.\n\n\
+Ask affiche ‡ l'Ècran une question et exige une rÈponse de l'utilisateur.\n\
+Cette rÈponse peut Ítre 'Y' (Oui), 'N' (Non) ou rien, auquel cas\n\
+Ask considÈrera la rÈponse comme nÈgative. Pour indiquer aux commandes\n\
+la rÈponse obtenue, Ask modifiera le drapeau de condition (cf. command IF).\n\
+Si la rÈponse est affirmative, il est posÈ ‡ 5 (WARN), 0 sinon.\n\n\
 Exemple:\n\n\
 SYS:> Type mon_fichier_de_commandes\n\
 Ask \"Avez-vous un Pegasos ? (YES/NO) \"\n\
 If Warn\n\
-    Echo \"Vous avez r√©pondu Oui.\"\n\
+    Echo \"Vous avez rÈpondu Oui.\"\n\
 Else\n\
-    Echo \"Vous avez r√©pondu Non.\"\n\n\
+    Echo \"Vous avez rÈpondu Non.\"\n\n\
 SYS:> Execute mon_fichier_de_commandes\n\
 Avez-vous un Pegasos ? (YES/NO) yes\n\
-Vous avez r√©pondu Oui.\n\
+Vous avez rÈpondu Oui.\n\
 SYS:>\n
 ; PROMPT - Text (question) to display.\n\n\
 ; Ask displays a question and waits for an answer.\n\
@@ -176,7 +176,7 @@ SYS:>\n
 ; You answered Yes.\n\
 ; SYS:>\n
 msgAssign
-Enum√®re, cr√©e, modifie ou enl√®ve un assign de MorphOS
+EnumËre, crÈe, modifie ou enlËve un assign de MorphOS
 ; Lists, creates, modifies or removes an assign from MorphOS
 msgAssignFULL
 NAME     - name of the assign\n\
@@ -226,7 +226,7 @@ assigns the FONTS: directory to Fontdir on MyFonts:\n
 ; SYS:> Assign FONTS: MyFonts:Fontdir\n\
 ; assigns the FONTS: directory to Fontdir on MyFonts:\n
 msgAvail
-Affiche la quantit√© de m√©moire libre disponible
+Affiche la quantitÈ de mÈmoire libre disponible
 ; Displays the amount of free memory available
 msgAvailFULL
 FAST  - Displays the amount of free FAST memory\n\
@@ -240,13 +240,13 @@ FLUSH - Frees all unused libraries, devices, fonts and catalogs\n
 ; HUMAN - Uses human-readable units instead of using bytes\n\
 ; FLUSH - Frees all unused libraries, devices, fonts and catalogs\n
 msgBeep
-Fait clignoter l'√©cran actuellement s√©lectionn√©
+Fait clignoter l'Ècran actuellement sÈlectionnÈ
 ; Flashes the current front-most screen
 msgBeepFULL
 This command will flashes current front-most screen\n
 ; This command will flashes current front-most screen\n
 msgBindDrivers
-Active les gestionn. de p√©riph. du tiroir expansion (d√©pr√©ci√©)
+Active les gestionn. de pÈriph. du tiroir expansion (dÈprÈciÈ)
 ; Activates device drivers in expansion drawer (outdated)
 msgBindDriversFULL
 BindDrivers loads and runs device drivers for add-on hardware.\n\
@@ -260,7 +260,7 @@ file to configure the hardware when the system is booted.\n
 ; NOTE: The BindDrivers command must appear in the Startup-sequence\n\
 ; file to configure the hardware when the system is booted.\n
 msgBreak
-Permet d'envoyer un signal (par ex. CTRL+C) √† un processus
+Permet d'envoyer un signal (par ex. CTRL+C) ‡ un processus
 ; Allows to send a signal (for eg. CTRL+C) to a process
 msgBreakFULL
 PROCESS - number of the process to send a signal to\n\
@@ -292,7 +292,7 @@ in the Shell window. Ctrl+D halts execution of a script file.\n
 ; A process that has been aborted this way displays ***Break\n\
 ; in the Shell window. Ctrl+D halts execution of a script file.\n
 msgCD
-Change ou affiche le r√©pertoire courant
+Change ou affiche le rÈpertoire courant
 ; Changes or displays current directory
 msgCDFULL
 DIR - name of the new directory\n\n\
@@ -322,7 +322,7 @@ Example 2: SYS:MorphOS/C/> //\n\
 ; Example 2: SYS:MorphOS/C/> //\n\
 ;            SYS:>\n
 msgChangeTaskPri
-Change la priorit√© de la t√¢che sp√©cifi√©e
+Change la prioritÈ de la t‚che spÈcifiÈe
 ; Changes the priority of the given process
 msgChangeTaskPriFULL
 PRIORITY - new priority of the process\n\
@@ -342,7 +342,7 @@ NOTE: use the Status command to display the current process numbers.\n
 ; important system tasks.\n\n\
 ; NOTE: use the Status command to display the current process numbers.\n
 msgCLI
-D√©marre un nouveau CLI int√©ractif sur le syst√®me
+DÈmarre un nouveau CLI intÈractif sur le systËme
 ; Starts a new interactive CLI on the system
 msgCLIFULL
 This command starts a new interactive CLI on MorphOS.\n\
@@ -352,7 +352,7 @@ in the current CLI window.\n
 ; A new window will be opened rather than opening a new tab\n\
 ; in the current CLI window.\n
 msgConClip
-Active ou d√©sactive le Presse-Papier
+Active ou dÈsactive le Presse-Papier
 ; Activates or De-activates the Clipboard
 msgConClipFULL
 CLIPUNIT - clipboard device unit number to use (from 0 to 255).\n\
@@ -366,7 +366,7 @@ NOTE: Using the OFF option causes the Shell command to stop interacting\n\
 ;       with the system Clipboard during cutting and pasting operations.\n\
 ;       We recommend that you do not use this option.\n
 msgCopy
-Copie un fichier/r√©pertoire source vers un autre r√©pertoire
+Copie un fichier/rÈpertoire source vers un autre rÈpertoire
 ; Copies a source file or directory to another directory
 msgCopyFULL
 FROM    - files or directory to copy.\n\
@@ -512,7 +512,7 @@ CHECK           - the CHECK option, when given with a keyword\n\
 ;                   or 68851, MMU, FPU) checks for the presence of\n\
 ;                   the processor indicated by the keyword.\n
 msgDate
-Affiche ou change la date/heure du syst√®me
+Affiche ou change la date/heure du systËme
 ; Displays or sets the date and time of the system
 msgDateFULL
 DAY  - sets the day to DAY\n\
@@ -538,7 +538,7 @@ must be used, as well as the last two digits of the year.\n
 ; The number or the first three letters of the month (in English)\n\
 ; must be used, as well as the last two digits of the year.\n
 msgDelete
-Efface un ou plusieurs fichier(s)/r√©pertoire(s)
+Efface un ou plusieurs fichier(s)/rÈpertoire(s)
 ; Deletes one or more files/directories
 msgDeleteFULL
 FILE        - file, directory or pattern-matching files to delete\n\
@@ -568,7 +568,7 @@ See also: Protect command.\n
 ;          even those set as not deletable.\n\n\
 ; See also: Protect command.\n
 msgDevList
-Affiche la liste des p√©riph√©riques pr√©sents en m√©moire
+Affiche la liste des pÈriphÈriques prÈsents en mÈmoire
 ; Displays a list of all devices present in memory
 msgDevListFULL
 DevList will display a list of all devices, including\n\
@@ -576,7 +576,7 @@ their address, version/revision and open count.\n
 ; DevList will display a list of all devices, including\n\
 ; their address, version/revision and open count.\n
 msgDIR
-Enum√®re les noms des fichiers et r√©pertoires (av. attributs)
+EnumËre les noms des fichiers et rÈpertoires (av. attributs)
 ; Lists file and directory names (w/o attributes)
 msgDIRFULL
 DIR   - directory to list\n\
@@ -626,7 +626,7 @@ NOTE: this command is only provided for compatibility. It was used\n\
 ; NOTE: this command is only provided for compatibility. It was used\n\
 ;       on the Amiga with 5.25 disk drives to inform the OS of a diskchange.\n
 msgDiskFree
-Affiche l'espace disponible sur le volume sp√©cifi√©
+Affiche l'espace disponible sur le volume spÈcifiÈ
 ; Displays available space of specified volume
 msgDiskFreeFULL
 VOLUME    - volume for which to display free space\n\
@@ -640,7 +640,7 @@ displayed.\n
 ; If no volume is specified, available space on the current volume is\n\
 ; displayed.\n
 msgDRadioTool
-Contr√¥le une radio USB de marque D-Link ou GemTek
+ContrÙle une radio USB de marque D-Link ou GemTek
 ; Controls an USB Radio manufactured by D-Link or GemTek
 msgDRadioToolFULL
 ON     - turns the radio ON\n\
@@ -684,7 +684,7 @@ Examples:  DRadioTool ON SCAN AUTO\n\
 ; Examples:  DRadioTool ON SCAN AUTO\n\
 ;            DRadioTool FREQ 104000\n
 msgEcho
-Affiche le message sp√©cifi√©
+Affiche le message spÈcifiÈ
 ; Displays the specified message
 msgEchoFULL
 NOLINE  - does not automatically move the cursor to the next line\n\
@@ -715,7 +715,7 @@ LEN 4, the 17TH, 18th, 19th, and 20th characters of the string are echoed.\n
 ; For example, if your string is 20 characters long and you specify\n\
 ; LEN 4, the 17TH, 18th, 19th, and 20th characters of the string are echoed.\n
 msgElse
-Sp√©cifie une alternative pour une condition IF dans un fichier script.
+SpÈcifie une alternative pour une condition IF dans un fichier script.
 ; Specifies an alternative for an IF statement in a script file.
 msgElseFULL
 Else must be used in conjunction with the If command.\n\
@@ -757,7 +757,7 @@ to the ECHO command. The following message is displayed in the Shell window:\n\
 ; to the ECHO command. The following message is displayed in the Shell window:\n\
 ; 'picfile is not in this directory'\n
 msgEndCli
-Ferme la fen√™tre CLI/Shell ou l'onglet courant
+Ferme la fenÍtre CLI/Shell ou l'onglet courant
 ; Closes CLI/Shell Window or Tab
 msgEndCliFULL
 That's it :)
@@ -781,7 +781,7 @@ SEE ALSO: If, Else for examples using the EndIf command.\n
 ; NOTE: the EndIf applies to the most recent If or Else command.\n\
 ; SEE ALSO: If, Else for examples using the EndIf command.\n
 msgEndShell
-Ferme la fen√™tre CLI/Shell ou l'onglet courant
+Ferme la fenÍtre CLI/Shell ou l'onglet courant
 ; Closes CLI/Shell Window or Tab
 msgEndShellFULL
 That's it :)
@@ -803,7 +803,7 @@ SEE ALSO: Skip\n
 ; The condition flag is set to 5 (WARN).\n\n\
 ; SEE ALSO: Skip\n
 msgEval
-Evalue une expression math√©matique
+Evalue une expression mathÈmatique
 ; Evaluates a mathematical expression
 msgEvalFULL
 VALUE1  - value 1: can be decimal, hexadecimal or octal (see below)\n\
@@ -871,7 +871,7 @@ Example: SYS:> EVAL 0x5f / 010 LFORMAT=\"The answer is %X4*N\"\n\
 ;          The answer is 000B\n\
 ;          SYS:>\n
 msgExecute
-Ex√©cute un fichier script
+ExÈcute un fichier script
 ; Executes a batch file
 msgExecuteFULL
 FILE - filename of the batch file to execute\n\n\
@@ -887,7 +887,7 @@ the Execute command is not needed.\n
 ; is in the search path, enter only the file name;\n\
 ; the Execute command is not needed.\n
 msgFailAt
-Change le niveau de tol√©rance lors de l'ex√©cution d'un script
+Change le niveau de tolÈrance lors de l'exÈcution d'un script
 ; Changes failure limit for scripts (0=Ok, 5=Warn, 10=Error)
 msgFailAtFULL
 RCLIM - Return Code Limit (initial value: 10)\n\n\
@@ -915,7 +915,7 @@ initial value of 10 on exit from the command sequence.\n
 ; The argument must be a positive number. The fail limit is reset to the\n\
 ; initial value of 10 on exit from the command sequence.\n
 msgFault
-Traduit les codes d'erreur num√©riques en texte ascii
+Traduit les codes d'erreur numÈriques en texte ascii
 ; Translates numeric error codes to ascii text
 msgFaultFULL
 /N/M - Numeric value(s) to translate\n\n\
@@ -929,7 +929,7 @@ Example: SYS:> fault 204 205\n\
 ;          Fault 205: object not found\n\
 ;          SYS:>\n
 msgFileNote
-Ajoute un commentaire √† un fichier
+Ajoute un commentaire ‡ un fichier
 ; Set a comment for a file
 msgFileNoteFULL
 FILE    - name of the file to attach a comment\n\
@@ -961,7 +961,7 @@ NOTE2: File comments are limited to 79 characters.\n
 ; regardless of whether the commend contains any spaces.\n\n\
 ; NOTE2: File comments are limited to 79 characters.\n
 msgFlushLib
-Enl√®ve les biblioth√©ques non-utilis√©es de la m√©moire
+EnlËve les bibliothÈques non-utilisÈes de la mÈmoire
 ; Removes unsused libraries from memory
 msgFlushLibFULL
 LIBRARY - name of the libraries to flush\n\
@@ -971,7 +971,7 @@ QUIET   - Suppresses output messages\n
 ; ONCE    - one flush per library only\n\
 ; QUIET   - Suppresses output messages\n
 msgFormat
-Formate un lecteur avec le format sp√©cifi√©
+Formate un lecteur avec le format spÈcifiÈ
 ; Formats a disk
 msgFormatFULL
 DRIVE        - name of the device to format\n\
@@ -1073,7 +1073,7 @@ msgHIFULL
 ;
 ; ***NEW***
 msgIconX
-Ex√©cute un fichier script √† partir du bureau (Ambient)
+ExÈcute un fichier script ‡ partir du bureau (Ambient)
 ; Executes a batch file from the desktop (Ambient)
 msgIconXFULL
 NOTE: IconX is used only as a default tool in a project icon\n\
@@ -1159,7 +1159,7 @@ EndIf\n
 ;     Echo \"It's not here\"\n\
 ; EndIf\n
 msgInfo
-Affiche des informations sur les syst√®mes de fichiers mont√©s
+Affiche des informations sur les systËmes de fichiers montÈs
 ; Displays information about mounted filesystems
 msgInfoFULL
 DISKS    - only shows information about disks\n\
@@ -1175,7 +1175,7 @@ DEVICES  - devices to show (if ommitted, displays all devices)\n
 ; VERBOSE  - gives more information\n\
 ; DEVICES  - devices to show (if ommitted, displays all devices)\n
 msgIPrefs
-Charge les fichiers de pr√©f√©rences au d√©marrage
+Charge les fichiers de prÈfÈrences au dÈmarrage
 ; Initialises preferences files on startup
 msgIPrefsFULL
 IPrefs reads the individual system Preferences files and passes\n\
@@ -1195,7 +1195,7 @@ IPrefs displays a requester asking you to close them.\n
 ; If any Shell, project, or tool windows are open,\n\
 ; IPrefs displays a requester asking you to close them.\n
 msgJoin
-R√©unit plusieurs fichiers en un gros fichier
+RÈunit plusieurs fichiers en un gros fichier
 ; Joins several files into one bigger file
 msgJoinFULL
 FILE - file(s) or pattern to match\n\
@@ -1213,7 +1213,7 @@ Example: SYS:> Join Part1 Part2 Part3 AS Textfile\n
 ; Any number of files can be Joined in one operation.\n\n\
 ; Example: SYS:> Join Part1 Part2 Part3 AS Textfile\n
 msgLab
-D√©finit une √©tiquette dans un fichier de commandes
+DÈfinit une Ètiquette dans un fichier de commandes
 ; Defines a label in a batch file
 msgLabFULL
 Lab is used in script to define a label that is searched for by the Skip command.\n\
@@ -1239,7 +1239,7 @@ echo \"File 'ram:test' exists.\"\n
 ; LAB oky\n\
 ; echo \"File 'ram:test' exists.\"\n
 msgLha
-Compresse ou d√©compresse des fichiers/r√©pertoires
+Compresse ou dÈcompresse des fichiers/rÈpertoires
 ; Compresses or uncompresses files/dirs
 msgLhaFULL
 This command uses non-standard arguments.\n\
@@ -1247,7 +1247,7 @@ Type 'LHA' in a Shell for a complete documentation of its arguments.\n
 ; This command uses non-standard arguments.\n\
 ; Type 'LHA' in a Shell for a complete documentation of its arguments.\n
 msgLibList
-Affiche des infos sur les biblioth√®ques pr√©sentes en m√©moire
+Affiche des infos sur les bibliothËques prÈsentes en mÈmoire
 ; Displays information about libraries present in memory
 msgLibListFULL
 LibList will display a list of all libs present in memory, including\n\
@@ -1255,7 +1255,7 @@ their address, version/revision, flags and open count.\n
 ; LibList will display a list of all libs present in memory, including\n\
 ; their address, version/revision, flags and open count.\n
 msgList
-Affiche le contenu du r√©pertoire sp√©cifi√©
+Affiche le contenu du rÈpertoire spÈcifiÈ
 ; Lists the contents of the specified directory
 msgListFULL
 DIR     - directory, filename or pattern to match\n\
@@ -1359,7 +1359,7 @@ NOTE: The default output of the LIST command uses the following specification:\n
 ; NOTE: The default output of the LIST command uses the following specification:\n\
 ;       %-24 %7L %A %D %T\n
 msgLoadMonDrvs
-Charge les p√©riph√©riques (ie: graphique) moniteurs
+Charge les pÈriphÈriques (ie: graphique) moniteurs
 ; Loads monitor (ie: graphic) drivers
 msgLoadMonDrvsFULL
 EXCEPT    - don't load this monitor\n\
@@ -1391,7 +1391,7 @@ from the current Shell.\n
 ; NEWPATH allows you to specify a new path that is snapshot\n\
 ; from the current Shell.\n
 msgLock
-Verrouille en √©criture un lecteur
+Verrouille en Ècriture un lecteur
 ; Write-protects a drive
 msgLockFULL
 DRIVE   - name of the drive to write-protect\n\
@@ -1405,7 +1405,7 @@ PASSKEY - optional: pass-key; changing again the write-protect status\n\
 ; PASSKEY - optional: pass-key; changing again the write-protect status\n\
 ;           of the device will require this passkey\n
 msgMakeDir
-Cr√©e un r√©pertoire
+CrÈe un rÈpertoire
 ; Creates a Directory
 msgMakeDirFULL
 NAME - name of the directories you whish to create\n\n\
@@ -1421,7 +1421,7 @@ NOTE: Makedir does not create a drawer icon for the new directory.\n
 ; in the directory in which you attempt to create a new one.\n\n\
 ; NOTE: Makedir does not create a drawer icon for the new directory.\n
 msgMakeLink
-Cr√©e un lien hard ou soft
+CrÈe un lien hard ou soft
 ; Creates a hard or soft link
 msgMakeLinkFULL
 FROM  - file to create a link to\n\
@@ -1439,7 +1439,7 @@ NOTE: If MakeLink detects that you are creating a circular link,\n\
 ;       such as a link to a parent directory, a Link loop not allowed\n\
 ;       message is issued.\n
 msgMount
-Rend accessible au syst√®me un nouveau p√©riph√©rique
+Rend accessible au systËme un nouveau pÈriphÈrique
 ; Makes a new device known to MorphOS
 msgMountFULL
 DEVICE - name of the device to mount (see below)\n\
@@ -1503,7 +1503,7 @@ Example2: Mount PIPE: FROM SYS:Mydevs/MountList\n\
 ; Example2: Mount PIPE: FROM SYS:Mydevs/MountList\n\
 ;           This scans for a PIPE entry in SYS:Mydevs/MountList.\n
 msgNewCLI
-D√©marre un nouveau CLI/SHELL int√©ractif sur le syst√®me
+DÈmarre un nouveau CLI/SHELL intÈractif sur le systËme
 ; Starts a new interactive CLI/SHELL on the system
 msgNewCLIFULL
 WINDOW - window specifications\n\
@@ -1513,7 +1513,7 @@ NewCli starts a new Shell process. See the NewShell command for more info.\n
 ; FROM   - CON device to use (use CON: for standard MorphOS shell)\n\n\
 ; NewCli starts a new Shell process. See the NewShell command for more info.\n
 msgNewShell
-D√©marre un nouveau CLI/SHELL int√©ractif sur le syst√®me
+DÈmarre un nouveau CLI/SHELL intÈractif sur le systËme
 ; Starts a new interactive CLI/SHELL on the system
 msgNewShellFULL
 WINDOW - window specifications (see below)\n\
@@ -1643,7 +1643,7 @@ on the motherboard: deviceID/vendorID, IRQ, Mem/Rom/IO Address range,...\n
 ; (including internal devices such as IDE controllers,...) present\n\
 ; on the motherboard: deviceID/vendorID, IRQ, Mem/Rom/IO Address range,...\n
 msgPath
-Modifie/affiche le chemin de recherche des fichiers ex√©cut.
+Modifie/affiche le chemin de recherche des fichiers exÈcut.
 ; Sets or displays the search path for executables
 msgPathFULL
 
@@ -1666,7 +1666,7 @@ msgPCIScanFULL
 ; DATA    - Display information about data (?)\n\
 ; VERBOSE - Be more verbose\n
 msgPCIWrite
-Outil pour communiquer avec les p√©riph√©riques PCI
+Outil pour communiquer avec les pÈriphÈriques PCI
 ; Tool to communicate with PCI devices
 msgPCIWriteFULL
 
@@ -1677,7 +1677,7 @@ msgPCIWriteFULL
 ; DATA - Not documented\n\
 ; SIZE - Not documented\n
 msgPenCamTool
-R√©cup√®re des images d'une webcam USB utilisant le chip STV680
+RÈcupËre des images d'une webcam USB utilisant le chip STV680
 ; Read out images from an USB webcam using the STV680 chip
 msgPenCamToolFULL
 
@@ -1774,7 +1774,7 @@ msgProtectFULL
 ;  MorphOS:> Protect #?.txt w SUB\n\
 ;  clears the write bit of all files matching pattern '#?.txt'\n
 msgQuit
-Quitte un script en sp√©cifiant un code de retour
+Quitte un script en spÈcifiant un code de retour
 ; Exits a batch file with specified return code
 msgQuitFULL
 
@@ -1791,7 +1791,7 @@ msgRelabelFULL
 ;  Changes the name of the MorphOS disk to MorphOS_Rulez.\n\
 ;  Please note that no colon is necessary after the second name.\n
 msgRemRAD
-Enl√®ve le lecteur RAD du syst√®me
+EnlËve le lecteur RAD du systËme
 ; Removes recoverable RAM-Drive from the system
 msgRemRADFULL
 
@@ -1808,14 +1808,14 @@ msgRemRADFULL
 ; the operation aborts with a device in use message.\n\
 ; To remove it if it is in use, you must use the FORCE option.\n
 msgRemResident
-Enl√®ve un module r√©sident de la liste des modules r√©sidents
+EnlËve un module rÈsident de la liste des modules rÈsidents
 ; Removes a resident module from the resident list
 msgRemResidentFULL
 
 ; MODULE - Name of the module to be removed\n\n\
 ; NOTE: Use ResList to display a list of all resident modules.\n
 msgRename
-Renomme des fichiers et r√©pertoires
+Renomme des fichiers et rÈpertoires
 ; Renames files and directories
 msgRenameFULL
 
@@ -1833,7 +1833,7 @@ msgRenameFULL
 ; of that directory or file in the filing system hierarchy.\n\
 ; This effectively moves the items.\n
 msgRequestChoice
-Demande une entr√©e via une requ√™te
+Demande une entrÈe via une requÍte
 ; Asks for input via a requester
 msgRequestChoiceFULL
 
@@ -1854,7 +1854,7 @@ msgRequestChoiceFULL
 ;  => ENV:rcnum contains 0, 1, or 2 after a gadget is selected.\n\
 ;     The script can use this value to control its later execution.\n
 msgRequestFile
-Demande le nom d'un fichier via une requ√™te de fichiers
+Demande le nom d'un fichier via une requÍte de fichiers
 ; Asks for a filename via a file requester
 msgRequestFileFULL
 
@@ -1889,7 +1889,7 @@ msgRequestFileFULL
 ;       First Drawer and File gadgets are empty and it displays\n\
 ;       the contents of the current directory.\n
 msgResident
-Ajoute ou enl√®ve une commande en m√©moire
+Ajoute ou enlËve une commande en mÈmoire
 ; Adds or Removes a command in memory
 msgResidentFULL
 
@@ -1920,13 +1920,13 @@ msgResidentFULL
 ;       Commands that have these characteristics are called 'pure' and\n\
 ;       have the p (pure) protection bit set.\n
 msgResList
-Affiche une liste de toutes les ressources pr√©sentes en m√©moire
+Affiche une liste de toutes les ressources prÈsentes en mÈmoire
 ; Displays a list of all resources in memory
 msgResListFULL
 
 ; See also: Resident and RemResident commands.\n
 msgRexxMast
-D√©marre le serveur Arexx
+DÈmarre le serveur Arexx
 ; Starts the ARexx Server
 msgRexxMastFULL
 
@@ -1934,7 +1934,7 @@ msgRexxMastFULL
 ; You can't use any ARexx capatibilities before it has been launched.\n\n\
 ; See Also: RX.\n
 msgRun
-Lance un shell ou processus en t√¢che de fond
+Lance un shell ou processus en t‚che de fond
 ; Spawns a background shell or process
 msgRunFULL
 
@@ -1952,7 +1952,7 @@ msgRunFULL
 ; Example:\n\
 ;   MorphOS:> run >NIL: SYS:Utilities/Taskmanager\n
 msgRX
-Interpr√™te le script Arexx sp√©cifi√©
+InterprÍte le script Arexx spÈcifiÈ
 ; Interprets the specified ARexx script
 msgRXFULL
 
@@ -2018,13 +2018,13 @@ msgSearchFULL
 ;       Search is aborted when Ctrl+C is pressed.\n\n\
 ; Examples:\n\
 ;   MorphOS:> search c:help $VER\n\
-;   1083 VER: Help [MOS] 0.6 (19.12.2004)¬© 2004 by Nicolas Ramz\n\n\
+;   1083 VER: Help [MOS] 0.6 (19.12.2004)© 2004 by Nicolas Ramz\n\n\
 ;   MorphOS> search utilities #?.info file\n\
 ;   MorphOS:Utilities/Calculator.info\n\
 ;   MorphOS:Utilities/Snoopium.info\n\
 ;   MorphOS:Utilities/TaskManager.info\n
 msgSegTracker
-Utilitaire de recherche pour disque des fichiers charg√©s
+Utilitaire de recherche pour disque des fichiers chargÈs
 ; Tracking utility for disk loaded files (inc. libs and devs)
 msgSegTrackerFULL
 
@@ -2038,7 +2038,7 @@ msgSegTrackerFULL
 ; If placed in the startup-sequence right after SetPatch, it will track\n\
 ; all disk loaded segments (other than those loaded by SetPatch).\n
 msgSet
-Cr√©e ou modifie la variable d'environnement locale
+CrÈe ou modifie la variable d'environnement locale
 ; Creates or modifies specified local environment variable
 msgSetFULL
 
@@ -2056,7 +2056,7 @@ msgSetFULL
 ; with SET are not recognized in the new Shells.\n\n\
 ; NOTE: Set with no arguments lists the current local variables.\n
 msgSetClock
-R√®gle l'horloge syst√®me
+RËgle l'horloge systËme
 ; Changes system and/or internal clock time
 msgSetClockFULL
 
@@ -2086,7 +2086,7 @@ msgSetConFULL
 ; NOTE: SetCON works with standard CON: and maybe not be supported\n\
 ;       by other CON: replacement such as MUICON.\n
 msgSetDate
-Change la derni√®re date de modification d'un fichier
+Change la derniËre date de modification d'un fichier
 ; Changes the last modification date of a file
 msgSetDateFULL
 
@@ -2100,7 +2100,7 @@ msgSetDateFULL
 ;   MorphOS:> Date my_file.txt Thursday 20-Jan-05 15:09:10\n\n\
 ; NOTE: You can use output from the DATE command as input to SetDate.\n
 msgSetEnv
-Cr√©e ou modifie la variable d'environnement globale
+CrÈe ou modifie la variable d'environnement globale
 ; Creates or modifies specified global environment variable
 msgSetEnvFULL
 
@@ -2129,7 +2129,7 @@ msgSetKeyboardFULL
 ;   => Sets the keyboard layout to match a GB 105 keys\n\n\
 ; NOTE: Keymaps are located in MOSSYS:Devs/Keymaps\n
 msgSkip
-Saute √† l'√©tiquette indiqu√©e
+Saute ‡ l'Ètiquette indiquÈe
 ; Skips to the appropriate label
 msgSkipFULL
 
@@ -2188,7 +2188,7 @@ msgStackFULL
 ; Use Stack with no argument to display current stack size.\n\n\
 ; NOTE: Each Shell has a specific stack size.\n
 msgStat
-Affiche quelques statistiques syst√®me depuis le d√©marrage
+Affiche quelques statistiques systËme depuis le dÈmarrage
 ; Displays some system stats since boot
 msgStatFULL
 
@@ -2219,7 +2219,7 @@ msgStatusFULL
 ;   MorphOS:> Break <RAM:Xyz >NIL: ?\n\n\
 ;   => sends a break to the process executing Copy.\n
 msgTaskList
-Affiche une liste d√©taill√©e de toutes les t√¢ches actives
+Affiche une liste dÈtaillÈe de toutes les t‚ches actives
 ; Displays a detailed list of all running tasks
 msgTaskListFULL
 
@@ -2285,7 +2285,7 @@ msgTSFULL
 ;
 ; ***NEW***
 msgTouch
-Cr√©e un fichier
+CrÈe un fichier
 ; Creates a file
 msgTouchFULL
 
@@ -2295,7 +2295,7 @@ msgTouchFULL
 ; more files to be created.\n\n\
 ; NOTE: if a file already exists, it won't be modified.\n
 msgType
-Affiche le contenu d'un fichier √† l'√©cran
+Affiche le contenu d'un fichier ‡ l'Ècran
 ; Displays the contents of a file to the screen
 msgTypeFULL
 
@@ -2339,7 +2339,7 @@ msgUnSetEnvFULL
 ; NOTE: With no arguments, UNSETENV lists the current variables.\n\n\
 ; See Also: SetEnv, Set, UnSet.\n
 msgUpRoarTool
-G√®re les lecteurs MP3 utilisant un chipset Samsung MP3
+GËre les lecteurs MP3 utilisant un chipset Samsung MP3
 ; Manages MP3 players that use a common Samsung MP3 chipset
 msgUpRoarToolFULL
 
@@ -2374,14 +2374,14 @@ msgUpRoarToolFULL
 ;   - Doesn't generate a valid date when uploading files.\n\
 ;   - Several fields of the protocol data are unknown.\n
 msgUpTime
-Affiche la dur√©e depuis laquelle le syst√®me fonctionne
+Affiche la durÈe depuis laquelle le systËme fonctionne
 ; Shows Uptime of MorphOS
 msgUpTimeFULL
 
 ; Display the time since MorphOS was (re)booted.\n\n\
 ; See Also: Stat.\n
 msgUSBDevLister
-Enum√®re tous les p√©riph√©riques USB trouv√©s
+EnumËre tous les pÈriphÈriques USB trouvÈs
 ; Lists all found USB devices
 msgUSBDevListerFULL
 
@@ -2397,7 +2397,7 @@ msgUSBErrorLogFULL
 ; NOTE: You may select the level of debug in the USB preferences panel.\n\n\
 ; See Also: USBDevLister, USB Preferences panel.\n
 msgVersion
-Reporte le num√©ro de version du fichier sp√©cifi√©
+Reporte le numÈro de version du fichier spÈcifiÈ
 ; Reports the version number of the specified file
 msgVersionFULL
 
@@ -2424,7 +2424,7 @@ msgVersionFULL
 ; Example:\n\
 ;   MorphOS:> version morphos FULL\n\
 ;   MorphOS 1.4 (25/04/2003)\n\
-;   ¬© 1999-2003 by Ralph Schmidt, Frank Mariak, Emmanuel Lesueur,\n\
+;   © 1999-2003 by Ralph Schmidt, Frank Mariak, Emmanuel Lesueur,\n\
 ;   Teemu Suikki, Harry Sintonen\n
 msgWait
 Attends un certain laps de temps
@@ -2457,7 +2457,7 @@ msgWaitForPortFULL
 ;      Do that 5 times.\n\n\
 ; NOTE: Port names are case sensitive.\n
 msgWhich
-Retourne l'emplacement de la commande pass√©e en param√®tre
+Retourne l'emplacement de la commande passÈe en paramËtre
 ; Searches the command path for a particular item
 msgWhichFULL
 
@@ -2473,10 +2473,10 @@ msgWhichFULL
 ;   MorphOS:> Which devlist\n\
 ;   MorphOS:morphos/c/DevList\n
 msgWhy
-Affiche le code de retour de la derni√®re commande ex√©cut√©e
+Affiche le code de retour de la derniËre commande exÈcutÈe
 ; Displays return code of last executed command
 msgWhyFULL
-Affiche le code de retour de la derni√®re commande ex√©cut√©e
+Affiche le code de retour de la derniËre commande exÈcutÈe
 ; When a command fails, the screen displays a brief message.\n\
 ; This message typically includes the name of the file,\n\
 ; if that was the problem, but provides no details. If the reason\n\
@@ -2488,7 +2488,7 @@ msgUsageALL
 Affiche une courte description des commandes disponibles
 ; Displays a small description of all available commands
 msgUsageCMD
-Affiche une description compl√®te de la commande 'CMD'
+Affiche une description complËte de la commande 'CMD'
 ; Displays a more complete description of the 'CMD' command
 msgUsageARGS
 Affiche une aide sur les arguments du shell MorphOS
@@ -2497,19 +2497,19 @@ msgUsageDOM
 Affiche une description des commandes du domaine DOM
 ; Shows a complete description of all commands related to DOM
 msgUsageDOM2
-peut √™tre
+peut Ítre
 ; can be
 msgUsageEX1
-affichera une description compl√®te de la commande DIR
+affichera une description complËte de la commande DIR
 ; will show a full description of the DIR command
 msgUsageEX2
 listera toutes les commandes en rapport avec le son
 ; will list all commands related to Sound
 msgUsageLANG
-Langage: Fran√ßais, traduit par Rusback & Nicolas Ramz.
+Langage: FranÁais, traduit par Rusback & Nicolas Ramz.
 ; Language: built-in English.
 msgUsageERR1
-Erreur dans la ligne de commande: argument du mot-cl√© manquant.
+Erreur dans la ligne de commande: argument du mot-clÈ manquant.
 ; Error in command line: value after keyword missing.
 msgUsageERR2
 Erreur dans la ligne de commande: trop d'arguments.
@@ -2521,27 +2521,27 @@ msgArgs1
 Help - Petit rappel sur les arguments Shell dans MorphOS
 ; Help - Small reminder on MorphOS Shell arguments
 msgArgs2
-Les commandes du shell MorphOS ont toutes une syntaxe qui suit un mod√®le.\n\
-Pour afficher ce mod√®le, tapez '?' apr√®s le nom de la commande.\n\n\
+Les commandes du shell MorphOS ont toutes une syntaxe qui suit un modËle.\n\
+Pour afficher ce modËle, tapez '?' aprËs le nom de la commande.\n\n\
 Par exemple: SYS:> AddDataTypes ?\n\
              FILES/M,QUIET/S,REFRESH/S: \n\n\
-Presser [?] affichera une description compl√®te des param√®tres,\n\
+Presser [?] affichera une description complËte des paramËtres,\n\
 si elle est disponible.\n\
-Presser [Entr√©e] ex√©cutera la commande si aucun param√®tre n'est requis.\n\
-Entrer des param√®tres et leurs mot-cl√©s puis presser [Entr√©e]\n\
-ex√©cutera aussi la commande.\n\n\
-Les param√®tres sont s√©par√©s par une virgule,\n\
-suivit d'un '/' et d'une lettre majuscule, le type du param√®tre:\n\n\
+Presser [EntrÈe] exÈcutera la commande si aucun paramËtre n'est requis.\n\
+Entrer des paramËtres et leurs mot-clÈs puis presser [EntrÈe]\n\
+exÈcutera aussi la commande.\n\n\
+Les paramËtres sont sÈparÈs par une virgule,\n\
+suivit d'un '/' et d'une lettre majuscule, le type du paramËtre:\n\n\
 /A: L'argument est obligatoire.\n\
-/K: Le mot-cl√© de l'option est requis si le param√®tre est utilis√©.\n\
+/K: Le mot-clÈ de l'option est requis si le paramËtre est utilisÈ.\n\
 /S: L'option fonctionne comme un commutateur.\n\
-    Le nom de l'option doit √™tre sp√©cifi√© pour pouvoir l'utiliser.\n\
-/N: Le param√®tre est de type num√©rique.\n\
-/M: Plusieurs options sont accept√©es pour ce param√®tre.\n\
-    Bien qu'il n'y ait pas de limite sur le nombre de param√®tres,\n\
-    ils doivent √™tre fournis avant l'option ou param√®tre suivant.\n\
-/F: La cha√Æne doit obligatoirement √™tre le dernier param√®tre; le restant\n\
-    de la ligne de commande sera consid√©r√© comme la cha√Æne souhait√©e.\n
+    Le nom de l'option doit Ítre spÈcifiÈ pour pouvoir l'utiliser.\n\
+/N: Le paramËtre est de type numÈrique.\n\
+/M: Plusieurs options sont acceptÈes pour ce paramËtre.\n\
+    Bien qu'il n'y ait pas de limite sur le nombre de paramËtres,\n\
+    ils doivent Ítre fournis avant l'option ou paramËtre suivant.\n\
+/F: La chaÓne doit obligatoirement Ítre le dernier paramËtre; le restant\n\
+    de la ligne de commande sera considÈrÈ comme la chaÓne souhaitÈe.\n
 ; MorphOS Shell commands follows a syntax defined by a template.\n\
 ; To display the template type a '?' after the command name.\n\n\
 ; For example: SYS:> AddDataTypes ?\n\
@@ -2563,7 +2563,7 @@ suivit d'un '/' et d'une lettre majuscule, le type du param√®tre:\n\n\
 ; /F: The string must be the final argument on the command line;\n\
 ;     the remainder of the command line is taken as the desired string.\n
 msgNoTemplate
-Pas de Mod√®le
+Pas de ModËle
 ; No Template
 msgNotFound
 Aucun domaine ou commande portant le nom
@@ -2572,5 +2572,5 @@ msgNotFound2
 Aucun domaine portant le nom
 ; No domain having the name
 msgDomainFound
-Commandes trouv√©es dans le domaine
+Commandes trouvÈes dans le domaine
 ; Commands found in the domain

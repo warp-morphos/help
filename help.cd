@@ -1211,7 +1211,7 @@ NOTE: Search leaves a 0 in the condition flag if the object is found,\n\
       Search is aborted when Ctrl+C is pressed.\n\n\
 Examples:\n\
   MorphOS:> search c:help $VER\n\
-  1083 VER: Help [MOS] 0.6 (19.12.2004)© 2004 by Nicolas Ramz\n\n\
+  1083 VER: Help [MOS] 0.6 (19.12.2004)? 2004 by Nicolas Ramz\n\n\
   MorphOS> search utilities #?.info file\n\
   MorphOS:Utilities/Calculator.info\n\
   MorphOS:Utilities/Snoopium.info\n\
@@ -1547,7 +1547,7 @@ of the file system used by a drive.\n\n\
 Example:\n\
   MorphOS:> version morphos FULL\n\
   MorphOS 1.4 (25/04/2003)\n\
-  © 1999-2003 by Ralph Schmidt, Frank Mariak, Emmanuel Lesueur,\n\
+  ? 1999-2003 by Ralph Schmidt, Frank Mariak, Emmanuel Lesueur,\n\
   Teemu Suikki, Harry Sintonen\n
 msgWait (/4/)
 Waits for an amount of time
