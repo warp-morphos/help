@@ -86,7 +86,7 @@ int NB_COMMANDS=0, NB_COMMANDS_FULL=0, NB_DOM=0;
 #define RC_OK 0
 #define RC_WARN 5
 
-#define _VERSION_ "[MOS] 0.93 (05.03.2005)"
+#define _VERSION_ "[MOS] 0.93.1 (08.07.2018)"
 char DVER[]="$VER: Help "_VERSION_"© 2004-2005 by Nicolas Ramz";
 
 typedef struct domains_desc
